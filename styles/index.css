@@ -80,7 +80,7 @@
 
 .introduction p {
   font-size: 20px;
-  color: rgb(240, 101, 36);
+  color: rgb(225, 175, 152);
 } 
 
 .gallery, .twitter {
@@ -118,6 +118,10 @@ button:hover span {
 
 button:hover {
   border: none;
+}
+
+.footer {
+  color: #009688;
 }
 
 
