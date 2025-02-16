@@ -40,31 +40,31 @@ p {
 }
 
 .slide:nth-child(1) {
-  background-image: url('/images/q21.jpg');
+  background-image: url('../images/q21.jpg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .slide:nth-child(2) {
-  background-image: url('/images/q22.jpg');
+  background-image: url('../images/q22.jpg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .slide:nth-child(3) {
-  background-image: url('/images/q23.jpg');
+  background-image: url('../images/q23.jpg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .slide:nth-child(4) {
-  background-image: url('/images/q24.jpg');
+  background-image: url('../images/q24.jpg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .slide:nth-child(5) {
-  background-image: url('/images/q25.jpg');
+  background-image: url('../images/q25.jpg');
   background-repeat: no-repeat;
   background-position: center;
 }
