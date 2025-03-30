@@ -1,34 +1,44 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background: url(../images/homepage_2.jpg) no-repeat;
+  background: url(/images/homepage_2.jpg) no-repeat;
   background-size: cover;
 }
 
 main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   column-gap: 10px;
   row-gap: 25px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .wrapper {
-  width: fit-content;
-  height: 330px;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: 330px;
   justify-content: space-between;
   align-items: center;
-  
-
   border: 2px solid rgba(80, 0, 97, 0.1);
-  box-shadow: 0, 0, 10px rgba(80, 0, 97, 0.45);
+  box-shadow: 0 0 10px rgba(80, 0, 97, 0.45);
 }
 
 .content {
-  width: fit-content;
+  width: 100%;
   height: 250px;
   display: flex;
   flex-direction: column;
@@ -51,6 +61,7 @@ main {
 .name, .quote {
   font-size: 20px;
   color: rgb(8, 181, 135);
+  text-align: center;
 }
 
 .btn {
@@ -65,4 +76,51 @@ main {
   cursor: pointer;
   background: inherit;
   color: rgb(8, 181, 135);
+}
+
+/* ---------------- RESPONSIVE DESIGN ---------------- */
+
+/* Large screens (1200px and above) - Default layout remains */
+
+/* Medium screens (900px to 1199px) - Show 3 items per row */
+@media (max-width: 1199px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Small screens (600px to 899px) - Show 2 items per row */
+@media (max-width: 899px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Extra small screens (below 600px) - Show 1 item per row */
+@media (max-width: 599px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .wrapper {
+    height: auto;
+    padding: 10px;
+  }
+
+  .img-cont {
+    width: 150px;
+  }
+
+  .img {
+    height: 150px;
+    border-radius: 75px;
+  }
+
+  .name, .quote {
+    font-size: 18px;
+  }
+
+  .ent {
+    font-size: 14px;
+  }
 }
