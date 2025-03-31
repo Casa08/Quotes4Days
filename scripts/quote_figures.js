@@ -2,7 +2,7 @@ const contents = [
     {
       image: '../images/card_2.jpg',
       name: 'Marcus Aurelius',
-      link: 'marcus-aurelius.html'
+      link: '../html/marcus-aurelius.html'
     },
     {
       image: '../images/card_3.jpg',
