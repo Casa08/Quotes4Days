@@ -6,7 +6,7 @@ export const sounds = [
   ];
 
 
-function playSound(sounds) {
+export function playSound(sounds) {
   const randomSound = Math.floor(Math.random() * sounds.length); // Pick a random sound 
   const audio = new Audio(sounds[randomSound]);
   audio.play(); // Play the sound
