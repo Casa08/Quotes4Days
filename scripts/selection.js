@@ -1,3 +1,4 @@
+import { contents } from "./quote_figures.js";
 let contentsHTML = '';
 
 contents.forEach((content) => {

@@ -1,4 +1,4 @@
-const contents = [
+export const contents = [
     {
       image: '../images/card_2.jpg',
       name: 'Marcus Aurelius',
