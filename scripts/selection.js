@@ -31,15 +31,14 @@ document.querySelector('.js-container')
   .innerHTML = contentsHTML;
 
 
+
 document.querySelectorAll(".js-ent-button")
 .forEach((button) => {
   button.addEventListener("click", (event) => {
     event.preventDefault(); // Prevents instant navigation
     document.body.style.opacity = "0"; // Fade out
 
-    // Pick a random sound 
-    const randomSound = new Audio(sounds[Math.floor(Math.random() * sounds.length)]);
-    randomSound.play(); // Play the sound
+    playSound();    
 
     setTimeout(() => {
       window.location.href = event.target.closest("a").href;
