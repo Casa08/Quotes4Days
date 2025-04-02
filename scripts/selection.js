@@ -1,5 +1,5 @@
 import { contents } from "./quote_figures.js";
-import { sounds } from "./sounds.js";
+import { sounds, playSound } from "./sounds.js";
 
 let contentsHTML = '';
 
@@ -38,7 +38,7 @@ document.querySelectorAll(".js-ent-button")
     event.preventDefault(); // Prevents instant navigation
     document.body.style.opacity = "0"; // Fade out
 
-    playSound();    
+    playSound(sounds);    
 
     setTimeout(() => {
       window.location.href = event.target.closest("a").href;
