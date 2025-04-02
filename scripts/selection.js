@@ -1,4 +1,6 @@
 import { contents } from "./quote_figures.js";
+import { sounds } from "./sounds.js";
+
 let contentsHTML = '';
 
 contents.forEach((content) => {
@@ -29,18 +31,10 @@ document.querySelector('.js-container')
   .innerHTML = contentsHTML;
 
 
-  const sounds = [
-  "../sounds/1.mp3",
-  "../sounds/2.mp3",
-  "../sounds/3.mp3",
-  "../sounds/4.mp3"
-];
-
-
 document.querySelectorAll(".js-ent-button")
 .forEach((button) => {
   button.addEventListener("click", (event) => {
-    event.preventDefault(); // Prevent instant navigation
+    event.preventDefault(); // Prevents instant navigation
     document.body.style.opacity = "0"; // Fade out
 
     // Pick a random sound 
