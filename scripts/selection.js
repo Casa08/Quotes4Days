@@ -31,7 +31,6 @@ document.querySelector('.js-container')
   .innerHTML = contentsHTML;
 
 
-
 document.querySelectorAll(".js-ent-button")
 .forEach((button) => {
   button.addEventListener("click", (event) => {
